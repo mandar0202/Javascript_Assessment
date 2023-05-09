@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showtime - Movie Ticket Booking System</title>
+  <link rel="stylesheet" href="show.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Showtime - Movie Ticket Booking System</h1>
+
+    <div class="movie-search">
+      <label for="search-input">Search by Title:</label>
+      <input type="text" id="search-input">
+      <button id="search-button">Search</button>
+    </div>
+
+    <div class="movie-filter">
+      <label for="genre-select">Filter by Genre:</label>
+      <select id="genre-select">
+        <option value="all">All Genres</option>
+        <option value="action">Action</option>
+        <option value="comedy">Comedy</option>
+        <option value="drama">Drama</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="sci-fi">Sci-Fi</option>
+      </select>
+    </div>
+
+    <div class="movie-list">
+      <!-- Movie list will be dynamically generated here -->
+    </div>
+  </div>
+
+  <script src="sc.js"></script>
+</body>
+</html>

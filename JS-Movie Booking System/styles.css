@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  background-image: url(mo.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: silver;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: green;
+  margin-bottom: 30px;
+}
+
+
+.movie-selection {
+  margin-bottom: 30px;
+}
+
+.movie-selection label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.movie-selection select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.seating-plan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.seat.available {
+  background-color: #9ac900;
+}
+
+.seat.booked {
+  background-color: #007bff;
+}
+
+.seat.selected {
+  background-color: #ffcc00;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.booking-summary {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.timer {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}

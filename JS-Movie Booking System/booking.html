@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Ticket Booking System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Ticket Booking</h1>
+    <form id="booking-form" onsubmit="return validateForm()">
+      <div class="movie-selection">
+        <label for="movie">Select a movie:</label>
+        <select id="movie" onchange="generateSeatingPlan()">
+          <option value="movie1">Peaky Blinders</option>
+          <option value="movie2">Inception</option>
+          <option value="movie3">Interstellar</option>
+        </select>
+      </div>
+      <div class="seating-plan">
+        <!-- Seats will be dynamically generated here -->
+      </div>
+      <div class="error-message" id="error-message"></div>
+      <div class="booking-summary" id="booking-summary"></div>
+      <div class="timer" id="timer"></div>
+      <br>
+      <button type="submit">Book Tickets</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
