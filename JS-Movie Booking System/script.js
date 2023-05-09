@@ -82,7 +82,7 @@ function validateForm() {
 
 
 function updateTimer() {
-  var showTime = new Date("2023-05-09T19:30:00"); 
+  var showTime = new Date("2023-05-29T19:30:00"); 
 
   var timerElement = document.getElementById("timer");
 
